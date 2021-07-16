@@ -4,16 +4,29 @@ namespace Recursion.Additional
 {
     static public class SecOrRevSecond
     {
-        public static int FromAtoB(int valueOne, int valueTwo) // Test
+        public static void FromAtoB(int valueA, int valueB) // Test
         {
-            if (valueOne <= valueTwo)
+            if (valueA >= valueB)
             {
-                Console.WriteLine(valueTwo);
-                return valueTwo;
+                Console.Write(valueA + " ");
+                if (valueA == valueB)
+                {
+                    return;
+                }
+
+                FromAtoB(valueA - 1, valueB);
             }
 
-            Console.WriteLine(valueOne);
-            return FromAtoB(valueOne - 1, valueTwo);
+            if (valueA <= valueB)
+            {
+                Console.Write(valueA + " ");
+                if (valueA == valueB)
+                {
+                    return;
+                }
+
+                FromAtoB(valueA + 1, valueB);
+            }
         }
     }
 }
