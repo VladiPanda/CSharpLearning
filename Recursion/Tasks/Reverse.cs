@@ -10,7 +10,6 @@ namespace Recursion.Tasks
             {
                 return;
             }
-
             ReverseNumber(value - 1);
             Console.Write(value + " ");
         }

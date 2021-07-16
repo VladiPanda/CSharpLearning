@@ -8,7 +8,7 @@
             {
                 return valueN + 1;
             }
-            if (valueM != 0 && valueN == 0)
+            if (valueN == 0)
             {
                 return ComputableFunction(valueM - 1, 1);
             }

@@ -4,31 +4,35 @@ namespace Recursion.Tasks
 {
     public static class SecOrRev
     {
-        public static void SequenceOrReverse(int valueA, int valueB)
+        public static int SequenceOrReverse(int valueA, int valueB)
         {
-            // if (valueA <= 0)
+            Console.Write(valueA + " ");  
+            if (valueA == valueB)
+            {
+                return valueA;
+            }
+            return valueA >= valueB
+                ? SequenceOrReverse(valueA - 1, valueB)
+                : SequenceOrReverse(valueA + 1, valueB);
+            
+            // if (valueA >= valueB)
             // {
-            //     return valueA;
+            //     Console.Write(valueA + " ");
+            //     if (valueA == valueB)
+            //     {
+            //         return;
+            //     }
+            //
+            //     SequenceOrReverse(valueA - 1, valueB);
             // }
-            // Console.Write(valueA + " ");
-            // return valueA >= valueB
-            //     ? SequenceOrReverse(valueA - 1, valueB)
-            //     : SequenceOrReverse(valueA + 1, valueB);
-
-            if (valueA > valueB)
-            {
-                Console.Write(valueA + " ");
-                SequenceOrReverse(valueA - 1, valueB);
+            // if (valueA <= valueB)
+            // {
+            //     Console.Write(valueA + " ");
+            //     if (valueA == valueB)
+            //     {
+            //         return;
+            //     }
+            //     SequenceOrReverse(valueA + 1, valueB);
             }
-
-            if (valueA < valueB)
-            {
-                Console.Write(valueA + " ");
-                SequenceOrReverse(valueA + 1, valueB );
-            }
-            
-
-            
         }
     }
-}
