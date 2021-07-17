@@ -11,7 +11,7 @@ namespace Recursion.Tasks
             {
                 return valueA;
             }
-
+            
             return SequenceOrReverse(valueA + ((valueA > valueB) ? -1 : 1), valueB);
             // return valueA >= valueB
             //     ? SequenceOrReverse(valueA - 1, valueB)
