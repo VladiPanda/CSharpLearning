@@ -7,11 +7,7 @@ namespace Recursion.Tasks
         public static int DigReverse(int number)
         {
             Console.Write(number % 10 + " ");
-            if (number < 10)
-            {
-                return number;
-            }
-            return DigReverse(number / 10);
+            return (number < 10) ? number : DigReverse(number / 10);
         }
     }
 }

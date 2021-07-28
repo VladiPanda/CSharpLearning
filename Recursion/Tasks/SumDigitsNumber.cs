@@ -1,8 +1,8 @@
 ﻿namespace Recursion.Tasks
 {
-    public static class SumDigitsNumber
+    public class SumDigitsNumber
     {
-        public static int SumDigits(int number)
+        public int SumDigits(int number)
         {
             // 1
             // if (number < 10)

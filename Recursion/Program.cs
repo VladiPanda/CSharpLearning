@@ -5,7 +5,7 @@ using static Recursion.Tasks.DigitsReverse;
 using static Recursion.Tasks.DigitsSequence;
 using static Recursion.Tasks.Reverse;
 using static Recursion.Tasks.SecOrRev;
-using static Recursion.Tasks.SumDigitsNumber;
+using Recursion.Tasks;
 
 namespace Recursion
 {
@@ -30,7 +30,8 @@ namespace Recursion
             // E: Дано натуральное число N. Вычислите сумму его цифр.
             //    При решении этой задачи нельзя использовать строки, списки, массивы (ну и циклы, разумеется). (DONE) 
 
-            Console.WriteLine(SumDigits(179));
+            SumDigitsNumber sumDig = new SumDigitsNumber();
+            Console.WriteLine(sumDig.SumDigits(179));
             // Console.WriteLine(Sdm(179));
             
             // F: Дано натуральное число N. Выведите все его цифры по одной, в обратном порядке, разделяя их пробелами или новыми строками.

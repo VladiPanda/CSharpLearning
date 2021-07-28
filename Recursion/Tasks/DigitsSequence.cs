@@ -14,6 +14,10 @@ namespace Recursion.Tasks
             int r = number - 10 * q;
             DigSequence(q);
             Console.Write(r + " ");
+            
+            // int d = number / 10;
+            // Console.Write(number + " ");
+            // return (number == 0) ? number : DigSequence(number - 10 * d);
 
         }
     }
