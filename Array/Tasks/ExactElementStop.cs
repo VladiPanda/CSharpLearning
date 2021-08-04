@@ -2,6 +2,7 @@
 
 namespace Array.Tasks
 {
+    // Блок 5. Выводит все элементы массива пока не встретится элемент -1.
     public static class ExactElementStop
     {
         public static void ElementStop(int[] array)

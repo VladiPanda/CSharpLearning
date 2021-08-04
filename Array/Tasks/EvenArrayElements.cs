@@ -2,6 +2,7 @@
 
 namespace Array.Tasks
 {
+    // Блок 3. Выводит чётные элементы массива.
     public static class EvenArrayElements
     {
         public static void EvenAE(int[] array)

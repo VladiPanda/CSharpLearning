@@ -2,6 +2,7 @@
 
 namespace Array.Tasks
 {
+    // Блок 4. Выводит все элементы массива через 1.
     public static class EverySecondElement
     {
         public static void ESElement(int[] array)
