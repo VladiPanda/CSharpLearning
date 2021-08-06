@@ -14,36 +14,25 @@ namespace ClassesTasks
             this.DamagePerAttack = damagePerAttack;
         }
 
-        public string DeclareWinner(Fighter fighter1, Fighter fighter2, string firstAttacker)
+        public static string DeclareWinner(Fighter player1, Fighter player2, string firstAttacker)
         {
-            // if (firstAttacker == fighter2.Name)
-            // {
-            //     while (fighter1.Health > 0 && fighter2.Health > 0)
-            //     {
-            //         fighter1.Health = fighter1.Health - fighter2.DamagePerAttack;
-            //         if (fighter1.Health <= 0) return fighter2.Name;
-            //         fighter2.Health = fighter2.Health - fighter1.DamagePerAttack;
-            //         if (fighter2.Health <= 0) return fighter1.Name;
-            //     }
-            // }
-            //
-            // else
-            // {
-            //     while (fighter1.Health > 0 && fighter2.Health > 0)
-            //     {
-            //         fighter2.Health = fighter2.Health - fighter1.DamagePerAttack;
-            //         if (fighter2.Health <= 0) return fighter1.Name;
-            //         fighter1.Health = fighter1.Health - fighter2.DamagePerAttack;
-            //         if (fighter1.Health <= 0) return fighter2.Name;
-            //     }
-            // }
-            //
-            // return firstAttacker;
+            Fighter fighter1 = firstAttacker == player1.Name ? player1 : player2;
+            Fighter fighter2 = firstAttacker == player2.Name ? player2 : player1;
+            
+            while (player1.Health > 0 && player2.Health > 0)
+            {
+                player2.Health = player2.Health - player1.DamagePerAttack;
+                if (player2.Health <= 0) return player1.Name;
+                player1.Health = player1.Health - player2.DamagePerAttack;
+                if (player1.Health <= 0) return player2.Name;
+            }
+            
+            return firstAttacker;
 
-            int FirstFighter = (fighter1.Health - 1) / fighter2.DamagePerAttack;
-            int SecondFighter = (fighter2.Health - 1) / fighter1.DamagePerAttack;
-    
-            return FirstFighter > SecondFighter ? fighter1.Name : SecondFighter > FirstFighter ? fighter2.Name : firstAttacker;
+            // int FirstFighter = (fighter1.Health - 1) / fighter2.DamagePerAttack;
+            // int SecondFighter = (fighter2.Health - 1) / fighter1.DamagePerAttack;
+            //
+            // return FirstFighter > SecondFighter ? fighter1.Name : SecondFighter > FirstFighter ? fighter2.Name : firstAttacker;
         }
     }
 }

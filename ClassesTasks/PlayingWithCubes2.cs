@@ -10,9 +10,9 @@ namespace ClassesTasks
             public int GetSide() { return this.Side; }
             public void SetSide(int s) { this.Side = Math.Abs(s); }
 
-            public Cube() { Side = 0; }
+            public Cube() : this(0){}
 
-            public Cube(int num) { Side = Math.Abs(num); }
+            public Cube(int num) { SetSide(num); }
             
             // private int _side;
             // public int GetSide() => _side;

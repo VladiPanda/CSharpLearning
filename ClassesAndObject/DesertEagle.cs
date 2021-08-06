@@ -4,10 +4,9 @@ namespace ClassesAndObject
 {
     public class DesertEagle : Guns
     {
-        public DesertEagle(int bullets, string noise)
+        public DesertEagle(int currentBullets, string noise, int magazineSize) : base(currentBullets, noise, magazineSize)
         {
-            BulletsInMagazine = bullets;
-            Noise = noise;
+            
             
         }
     }

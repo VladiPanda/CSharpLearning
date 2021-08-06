@@ -9,11 +9,24 @@ namespace ClassesTasks
         public class Cube
         {
             private int side;
-            public int Side {get { return side;} set { side = Abs(value); } }
-            public int Volume { get => (int) Pow(Side, 3); private set{} }
-            public int Surface { get => Side * Side * 6; private set{}}
-            
-            public Cube() { }
+
+            public int Side
+            {
+                get => side;
+                set
+                {
+                    side = Abs(value);
+                    Volume = (int) Pow(side, 3);
+                    Surface = side * side * 6;
+                }
+            }
+
+            public int Volume { get; private set; }
+
+            public int Surface { get; private set; }
+
+            public Cube() : this(0) { } 
+
             public Cube(int num) { Side = num; }
         }
     }

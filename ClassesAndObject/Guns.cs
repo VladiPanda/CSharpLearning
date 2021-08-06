@@ -4,11 +4,22 @@ namespace ClassesAndObject
 {
     public class Guns
     {
-        
-        public int BulletsInMagazine { get; set; }
-        
-        private bool _isLoaded;
+        public int MagazineSize { get; set; }
+        public int CurrentBulletsCount { get; set; }
         public string Noise { get; set; }
+
+        public Guns(int currentBullets, string noise, int magazineSize)
+        {
+            CurrentBulletsCount = currentBullets;
+            MagazineSize = magazineSize;
+            Noise = noise;
+        }
+        
+        private bool IsLoaded()
+        {
+            return CurrentBulletsCount > 0;
+        }
+        
         
         public void GetAWeapon()
         {
@@ -22,43 +33,32 @@ namespace ClassesAndObject
 
         private void Reload()
         {
-            if (BulletsInMagazine == 0)
+            if (CurrentBulletsCount == 0)
             {
                 Console.WriteLine("Loading...");
-                _isLoaded = true;
+                CurrentBulletsCount = MagazineSize;
                 Console.WriteLine("Magazine is loaded!");
             }
         }
 
         public void Shoot()
         {
-            if (!_isLoaded)
+            if (!IsLoaded())
             {
                 Console.WriteLine("Magazine is empty!");
                 Reload();
             }
             Console.WriteLine(Noise);
-            BulletsInMagazine -= 1;
+            CurrentBulletsCount -= 1;
             
         }
 
         public void BurstShooting(int bullets)
         {
-            BulletsInMagazine = bullets;
             
-            for (int i = 0; BulletsInMagazine > 0 ; BulletsInMagazine--)
+            for (int i = 0; i <= bullets ; i++)
             {
-                Console.WriteLine(Noise);
-                if (!_isLoaded)
-                {
-                    Console.WriteLine("Magazine is empty!");
-                    Reload();
-                }
-                
-                if (BulletsInMagazine == 0)
-                {
-                    _isLoaded = false;
-                }
+                Shoot();
             }
         }
     }

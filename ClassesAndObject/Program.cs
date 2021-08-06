@@ -5,11 +5,8 @@ namespace ClassesAndObject
     {
         static void Main(string[] args)
         {
-            DesertEagle pistol = new DesertEagle(0, "Pow!");
-            pistol.GetAWeapon();
-            pistol.Shoot();
-            pistol.BurstShooting(7);
-            pistol.RemoveWeapon();
+            DesertEagle pistol = new DesertEagle(3, "Pow!", 7);
+            pistol.BurstShooting(20);
         }
     }
 }
