@@ -24,6 +24,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Params_02", "Params_02\Para
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexers", "Indexers\Indexers.csproj", "{CF0591D9-5BCD-4B30-980C-53FE34266632}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction", "Abstraction\Abstraction.csproj", "{65720F0E-2FDE-4CAD-A896-0CE268605A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{60B4FB29-3B97-4011-B3E8-5A8868F38D39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +82,13 @@ Global
 		{CF0591D9-5BCD-4B30-980C-53FE34266632}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF0591D9-5BCD-4B30-980C-53FE34266632}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF0591D9-5BCD-4B30-980C-53FE34266632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65720F0E-2FDE-4CAD-A896-0CE268605A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65720F0E-2FDE-4CAD-A896-0CE268605A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65720F0E-2FDE-4CAD-A896-0CE268605A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65720F0E-2FDE-4CAD-A896-0CE268605A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B4FB29-3B97-4011-B3E8-5A8868F38D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B4FB29-3B97-4011-B3E8-5A8868F38D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B4FB29-3B97-4011-B3E8-5A8868F38D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B4FB29-3B97-4011-B3E8-5A8868F38D39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
