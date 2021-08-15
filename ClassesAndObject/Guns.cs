@@ -2,7 +2,7 @@
 
 namespace ClassesAndObject
 {
-    public class Guns
+   abstract public class Guns
     {
         public int MagazineSize { get; set; }
         public int CurrentBulletsCount { get; set; }
