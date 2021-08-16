@@ -8,8 +8,18 @@ namespace ClassesRecup
     // абстрактный класс по сути некая идея, описание "контракта" с возможной частичной реализацией поведения обьекта
     // наследуемого от абстрактного класса
     // свойство - это по сути "метод" для упрощения работы с get и set который маскируется под поле
+    interface IHasInfo
+    {
+        void ShowInfo();
+    }
 
-    abstract class Weapon
+    interface IWeapon
+    {
+        int Damage { get; } // интерфейс может содержать поля потому что они по сути являются методами
+                            // для упрощеной работы с get и set
+        void Fire();
+    }
+    abstract class Weapon : IHasInfo, IWeapon
     {
         public abstract int Damage { get; }
         // абстрактные методы могут находиться только внутри абстрактных классов
@@ -24,7 +34,7 @@ namespace ClassesRecup
     class Gun :Weapon 
     {
         // Наследники абстрактного класса должны реализовать его абстрактные члены(контракт)
-        // Таким образом мы гарантируем, что все наследники будут иметь метод 
+        // Таким образом мы гарантируем, что все наследники будут иметь метод Fire
         // А Player из этого "нечто" стрелять
 
         public override int Damage { get { return 5; } }
@@ -55,6 +65,14 @@ namespace ClassesRecup
         }
     }
 
+    class Box : IHasInfo
+    {
+        public void ShowInfo()
+        {
+            Console.WriteLine("I am a mighty box!");
+        }
+    }
+
     class Player
     {
         // у абстрактных классов нельзя создавать экземпляры
@@ -64,9 +82,9 @@ namespace ClassesRecup
             weapon.Fire();
         }
 
-        public void CheckInfo(Weapon weapon)
+        public void CheckInfo(IHasInfo hasInfo)
         {
-            weapon.ShowInfo();
+            hasInfo.ShowInfo();
         }
     }
 }

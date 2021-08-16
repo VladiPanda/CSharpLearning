@@ -2,7 +2,7 @@
 /*
  * Интерфейсы и полмиорфизм
  * Абстрактные и виртуальные классы
- * Вложенные классы и статические классы
+ * Наследование
  */
 namespace ClassesRecup
 {
@@ -66,7 +66,13 @@ namespace ClassesRecup
                 player.Fire(item);
                 Console.WriteLine( );
             }
-
+            player.CheckInfo(new Box());
+            // раз интерфейс реализован в классе, то ссылка на интерфейс может хранить объект класса
+            IDataProcessor dataProcessor = new ConsoleDataProcessor();
+            
+            dataProcessor.ProcessData(new DbDataProvider());
+            dataProcessor.ProcessData(new FileDataProvider());
+            dataProcessor.ProcessData(new APIDataProvider());
         }
     }
 }
