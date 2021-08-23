@@ -1,24 +1,30 @@
 ﻿using System;
 
 // Ковариантность обобщений.
+// Ковариантность обобщений в C# 4.0 ограничена интерфейсами и делегатами.
 
-namespace Generics_04
+namespace Generics_05
 {
     public abstract class Shape { }
     public class Circle : Shape { }
 
-    public interface IContainer<T>
+    public interface IContainer<out T>
     {
-        T Figure { get; set; }
+        T Figure { get; }
     }
 
     public class Container<T> : IContainer<T>
     {
-        public T Figure { get; set; }
+        private T figure;
 
         public Container(T figure)
         {
-            this.Figure = figure;
+            this.figure = figure;
+        }
+
+        public T Figure
+        {
+            get { return figure; }
         }
     }
 
@@ -27,8 +33,8 @@ namespace Generics_04
         static void Main()
         {
             Circle circle = new Circle();
-            // ковариантность обобщения - это апкаст параметра типа
-            IContainer<Shape> container = new Container<Shape>(circle);
+
+            IContainer<Shape> container = new Container<Circle>(circle);
 
             Console.WriteLine(container.Figure.ToString());
 
