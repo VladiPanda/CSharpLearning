@@ -96,6 +96,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableTypes_01", "Nullabl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableType_02", "NullableType_02\NullableType_02.csproj", "{A70CC1E2-642C-4865-A5D1-3C72D9C54CDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceStation", "SpaceStation\SpaceStation.csproj", "{F81EE687-96CE-47FB-9B95-B282E4C3126C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -294,5 +296,9 @@ Global
 		{A70CC1E2-642C-4865-A5D1-3C72D9C54CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A70CC1E2-642C-4865-A5D1-3C72D9C54CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A70CC1E2-642C-4865-A5D1-3C72D9C54CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81EE687-96CE-47FB-9B95-B282E4C3126C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81EE687-96CE-47FB-9B95-B282E4C3126C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81EE687-96CE-47FB-9B95-B282E4C3126C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81EE687-96CE-47FB-9B95-B282E4C3126C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
