@@ -9,7 +9,7 @@ namespace Structures
     // могут наследоваться
 
     // Структуры нельзя наследовать от классов или от других структур, но можно реализовать интерфейсы
-    public class ClassPoint
+    public class ClassPoint 
     {
         public int X { get; set; }
         public int Y { get; set; }

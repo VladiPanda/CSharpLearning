@@ -284,6 +284,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreprocessorDirectives_05",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreprocessorDirectives_06", "PreprocessorDirectives_06\PreprocessorDirectives_06.csproj", "{718F7754-85AC-4F69-AAB3-6E6926238E55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummaryOfAll", "SummaryOfAll\SummaryOfAll.csproj", "{5D08A657-B45D-4E48-B828-1AB5068F7697}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -858,5 +860,9 @@ Global
 		{718F7754-85AC-4F69-AAB3-6E6926238E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{718F7754-85AC-4F69-AAB3-6E6926238E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{718F7754-85AC-4F69-AAB3-6E6926238E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D08A657-B45D-4E48-B828-1AB5068F7697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D08A657-B45D-4E48-B828-1AB5068F7697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D08A657-B45D-4E48-B828-1AB5068F7697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D08A657-B45D-4E48-B828-1AB5068F7697}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
