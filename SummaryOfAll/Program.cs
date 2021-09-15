@@ -3,6 +3,22 @@
 
 namespace SummaryOfAll
 {
+        // Класс, метод которого будет сообщен с делегатом.
+        static class MyClass
+        {
+            // Создаем статический метод, который планируем сообщить с делегатом.
+            public static void Method()
+            {
+                Console.WriteLine("Строку вывел метод сообщенный с делегатом");
+            }
+        }
+        // Создаем класс-делегата с именем MyDelegate, метод, который будет сообщен с экземпляром данного класса-делегата,
+        // не будет ничего принимать и не будет ничего возвращать.
+        public delegate void MyDelegate();
+
+        public delegate int MyIntDelegate(int a, int b);
+
+        public delegate int MySecondIntDelegate(int a);
     class Program
     {
         static void Main(string[] args)
@@ -161,6 +177,35 @@ namespace SummaryOfAll
             {
                 Console.WriteLine(number);
             }
+            
+            // delegate #1
+            MyDelegate myDelegate = new MyDelegate(MyClass.Method); // Создаем экземпляр делегата
+            myDelegate.Invoke(); // Вызываем метод сообщенный с делегатом.
+            myDelegate(); // Другой способ вызова метода собщенного с делегатом
+            
+            // delegate #2
+            int summand1 = 1, summand2 = 2, sum = 0;
+
+            MyIntDelegate myIntDelegate = delegate(int a, int b) { return a + b; };
+
+            sum = myIntDelegate(summand1, summand2);
+            
+            // delegate #3
+            MySecondIntDelegate mySecondIntDelegate;
+            mySecondIntDelegate = delegate(int x) { return x * 2;}; // Лямбда - метод
+            mySecondIntDelegate = (x) => { return x * 2; };      // Лямбда - оператор
+            mySecondIntDelegate = x => x * 2;                    // Лямбда - выражение
+
+            int result = mySecondIntDelegate(4);
+            Console.WriteLine(result);
+            
+            // Создаем экземпляр класса MyClass и в качестве параметра типа (тип Generics) передаем тип int
+            Generics<int> instance3 = new Generics<int>();
+            instance3.Method();
+            // Создаем экземпляр класса MyClass и в качестве параметра типа (тип Generics) передаем тип long
+            Generics<long> instance4 = new Generics<long>();
+            instance4.Method();
+            
         }
     }
 }
