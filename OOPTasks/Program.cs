@@ -94,20 +94,48 @@ namespace OOPTasks
             //
             // Console.WriteLine();
             // Console.WriteLine("Massive Length: {0}", list2.Lenght);
-            //
-            // Generics # 5
-            ArrayList arrayList = new ArrayList();
-            arrayList.Add(0);
-            arrayList.Add(0.67);
-            arrayList.Add('a');
-            arrayList.Add("Element");
-            arrayList.Add(new MyClass2());
-
-            for (int i = 0; i < arrayList.Count; i++)
-            {
-                Console.WriteLine(arrayList[i]);
-            }
             
+            
+            // Generics # 5
+            // ArrayList arrayList = new ArrayList();
+            // arrayList.Add(0);
+            // arrayList.Add(0.67);
+            // arrayList.Add('a');
+            // arrayList.Add("Element");
+            // arrayList.Add(new MyClass2());
+            //
+            // for (int i = 0; i < arrayList.Count; i++)
+            // {
+            //     Console.WriteLine(arrayList[i]);
+            // }
+            
+            // Generics # 6
+            Console.WriteLine("Cars park: ");
+            var park = new CarCollection<string>();
+            
+            park.AddCar("Batmobile", new DateTime(1975, 12,5));
+            park.AddCar("Danmobile", new DateTime(2021, 11,3));
+            park.AddCar("Vovanmobile", new DateTime(1473,5,7));
+            park.AddCar("Alexmobile", new DateTime(2045,10,3));
+            park.AddCar("Cybermobile", new DateTime(2077,7,7));
+
+            Console.WriteLine(park.ToString());
+
+            Console.WriteLine("Right now in the park: {0} cars", park.Lenght);
+
+            Console.WriteLine("Type the number of car you are searching: ");
+            string text = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(text))
+            {
+                Console.WriteLine("Nu taypni blin");
+            }
+            else
+            {
+                int number = Convert.ToInt32(text);
+                Console.WriteLine(park[number - 1]);
+            }
+
 
         }
     }
