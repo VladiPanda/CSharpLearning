@@ -68,8 +68,31 @@ namespace OOPTasks
                 Console.WriteLine(dictionary[g]);
             }
 
-            Console.WriteLine(dictionary[1]);
+            Console.WriteLine(dictionary[0]);
             Console.WriteLine(dictionary.Lenght);
+            
+            // Generics # 4
+            Console.WriteLine("Type massive length: ");
+            int h = Convert.ToInt32(Console.ReadLine());
+
+            var list2 = new MyList2<int>(h);
+
+            var y = new Random();
+            for (int e = 0; e < h; e++)
+            {
+                list2.Add(e, y.Next(100));
+            }
+
+            Console.WriteLine("Massive");
+            int[] f = list2.GetArray(); // расширяющий метод
+
+            for (int j = 0; j < f.Length; j++)
+            {
+                Console.Write("{0}" + " ", f[j]);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Massive Length: {0}", list2.Lenght);
 
         }
     }
