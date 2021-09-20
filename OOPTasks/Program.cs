@@ -48,6 +48,28 @@ namespace OOPTasks
             {
                 Console.WriteLine("Ne zbz, ego net");
             }
+            
+            // Generics # 3
+
+            Console.WriteLine("Type dictionary length: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            var dictionary = new MyDictionary<string, string>(n);
+
+            for (int v = 0; v < n; v++)
+            {
+                dictionary.Add(v, "Денис", "Programmer, guru, good guy");
+            }
+
+            Console.WriteLine(new string('-', 30));
+
+            for (int g = 0; g < n; g++)
+            {
+                Console.WriteLine(dictionary[g]);
+            }
+
+            Console.WriteLine(dictionary[1]);
+            Console.WriteLine(dictionary.Lenght);
 
         }
     }
