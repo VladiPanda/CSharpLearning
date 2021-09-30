@@ -294,6 +294,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsCodeBlog", "Generic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate_EventCodeBlog", "Delegate_EventCodeBlog\Delegate_EventCodeBlog.csproj", "{BFD33734-2F1E-4DBF-9E82-664D87A30620}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoloLearnWords", "SoloLearnWords\SoloLearnWords.csproj", "{B805A78E-840E-4779-825E-2B7705C87479}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -888,5 +890,9 @@ Global
 		{BFD33734-2F1E-4DBF-9E82-664D87A30620}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFD33734-2F1E-4DBF-9E82-664D87A30620}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFD33734-2F1E-4DBF-9E82-664D87A30620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B805A78E-840E-4779-825E-2B7705C87479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B805A78E-840E-4779-825E-2B7705C87479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B805A78E-840E-4779-825E-2B7705C87479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B805A78E-840E-4779-825E-2B7705C87479}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
