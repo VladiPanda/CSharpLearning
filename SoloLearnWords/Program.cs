@@ -24,12 +24,11 @@ namespace SoloLearnWords
                     Console.WriteLine(word);
                     count++;
                 }
-
-                if (count == 0)
-                {
-                    Console.WriteLine("No match");
-                    break;
-                }
+            }
+            if(count == 0)
+            {
+                Console.WriteLine("No match");
+                    
             }
         }
     }
