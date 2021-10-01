@@ -286,6 +286,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreprocessorDirectives_06",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummaryOfAll", "SummaryOfAll\SummaryOfAll.csproj", "{5D08A657-B45D-4E48-B828-1AB5068F7697}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stopwatch", "Stopwatch\Stopwatch.csproj", "{C65C0DA2-DB69-4688-843B-E19043E04909}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -864,5 +866,9 @@ Global
 		{5D08A657-B45D-4E48-B828-1AB5068F7697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D08A657-B45D-4E48-B828-1AB5068F7697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D08A657-B45D-4E48-B828-1AB5068F7697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65C0DA2-DB69-4688-843B-E19043E04909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65C0DA2-DB69-4688-843B-E19043E04909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65C0DA2-DB69-4688-843B-E19043E04909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65C0DA2-DB69-4688-843B-E19043E04909}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
