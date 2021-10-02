@@ -1,4 +1,6 @@
-﻿namespace OOPTasks
+﻿using System.Text;
+
+namespace OOPTasks
 {
     public class MyList<T> : IMyList<T>
     {
@@ -49,15 +51,18 @@
 
         }
 
+        
         public override string ToString()
         {
-            string text = null;
+           // string text = null;
+            StringBuilder newString = new StringBuilder();
             for (int i = 0; i < array.Length; i++)
             {
-                text += array[i] + " ";
+                // text += array[i] + " ";
+                newString.Append(array[i]); // ?
             }
 
-            return "Размер массива: " + array.Length + "Элементы массива: " + text;
+            return "Размер массива: " + array.Length + "Элементы массива: " + newString;
         }
     }
 }

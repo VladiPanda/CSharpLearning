@@ -19,36 +19,36 @@ namespace OOPTasks
             
             // Generics # 2
 
-            // Console.WriteLine("Type massive Length: ");
-            // string str = Console.ReadLine();
-            // int a = string.IsNullOrEmpty(str) ? 0 : Convert.ToInt32(str);
-            //
-            // var list = new MyList<int>();
-            //
-            // var b = new Random();
-            // for (int x = 0; x < a; x++)
-            // {
-            //     list.Add(b.Next(100));
-            // }
-            //
-            // Console.WriteLine("Massive elements: ");
-            // for (int q = 0; q < list.Count; q++)
-            // {
-            //     Console.Write(list[q] + " ");
-            // }
-            //
-            // Console.WriteLine();
-            // Console.WriteLine(new string('-', 30));
-            //
-            // Console.WriteLine("Type value for searching: ");
-            // if (list.Contains(Convert.ToInt32(Console.ReadLine())))
-            // {
-            //     Console.WriteLine("Zbs, ono est'");
-            // }
-            // else
-            // {
-            //     Console.WriteLine("Ne zbz, ego net");
-            // }
+            Console.WriteLine("Enter the length of the array: ");
+            var str = Console.ReadLine();
+            int a = string.IsNullOrEmpty(str) ? 0 : Convert.ToInt32(str);
+            
+            var list = new MyList<int>();
+            
+            var b = new Random();
+            for (int x = 0; x < a; x++)
+            {
+                list.Add(b.Next(100));
+            }
+            
+            Console.WriteLine("Array elements: ");
+            for (int q = 0; q < list.Count; q++)
+            {
+                Console.Write(list[q] + " ");
+            }
+            
+            Console.WriteLine();
+            Console.WriteLine(new string('-', 30));
+            
+            Console.WriteLine("Type value for searching: ");
+            if (list.Contains(Convert.ToInt32(Console.ReadLine())))
+            {
+                Console.WriteLine("Zbs, ono est'");
+            }
+            else
+            {
+                Console.WriteLine("Ne zbz, ego net");
+            }
             
             // Generics # 3
 
@@ -110,31 +110,31 @@ namespace OOPTasks
             // }
             
             // Generics # 6
-            Console.WriteLine("Cars park: ");
-            var park = new CarCollection<string>();
-            
-            park.AddCar("Batmobile", new DateTime(1975, 12,5));
-            park.AddCar("Danmobile", new DateTime(2021, 11,3));
-            park.AddCar("Vovanmobile", new DateTime(1473,5,7));
-            park.AddCar("Alexmobile", new DateTime(2045,10,3));
-            park.AddCar("Cybermobile", new DateTime(2077,7,7));
-
-            Console.WriteLine(park.ToString());
-
-            Console.WriteLine("Right now in the park: {0} cars", park.Lenght);
-
-            Console.WriteLine("Type the number of car you are searching: ");
-            string text = Console.ReadLine();
-
-            if (string.IsNullOrEmpty(text))
-            {
-                Console.WriteLine("Nu taypni blin");
-            }
-            else
-            {
-                int number = Convert.ToInt32(text);
-                Console.WriteLine(park[number - 1]);
-            }
+            // Console.WriteLine("Cars park: ");
+            // var park = new CarCollection<string>();
+            //
+            // park.AddCar("Batmobile", new DateTime(1975, 12,5));
+            // park.AddCar("Danmobile", new DateTime(2021, 11,3));
+            // park.AddCar("Vovanmobile", new DateTime(1473,5,7));
+            // park.AddCar("Alexmobile", new DateTime(2045,10,3));
+            // park.AddCar("Cybermobile", new DateTime(2077,7,7));
+            //
+            // Console.WriteLine(park.ToString());
+            //
+            // Console.WriteLine("Right now in the park: {0} cars", park.Lenght);
+            //
+            // Console.WriteLine("Type the number of car you are searching: ");
+            // string text = Console.ReadLine();
+            //
+            // if (string.IsNullOrEmpty(text))
+            // {
+            //     Console.WriteLine("Nu taypni blin");
+            // }
+            // else
+            // {
+            //     int number = Convert.ToInt32(text);
+            //     Console.WriteLine(park[number - 1]);
+            // }
 
 
         }
