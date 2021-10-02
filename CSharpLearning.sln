@@ -286,6 +286,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreprocessorDirectives_06",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummaryOfAll", "SummaryOfAll\SummaryOfAll.csproj", "{5D08A657-B45D-4E48-B828-1AB5068F7697}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProject", "MyProject\MyProject.csproj", "{505B8FE1-0AAF-44BA-B97F-0909FA33FD40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoloLearnDance", "SoloLearnDance\SoloLearnDance.csproj", "{4E12627A-8FEC-4AB2-A188-04D34A82C921}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -864,5 +868,13 @@ Global
 		{5D08A657-B45D-4E48-B828-1AB5068F7697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D08A657-B45D-4E48-B828-1AB5068F7697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D08A657-B45D-4E48-B828-1AB5068F7697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{505B8FE1-0AAF-44BA-B97F-0909FA33FD40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{505B8FE1-0AAF-44BA-B97F-0909FA33FD40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{505B8FE1-0AAF-44BA-B97F-0909FA33FD40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{505B8FE1-0AAF-44BA-B97F-0909FA33FD40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E12627A-8FEC-4AB2-A188-04D34A82C921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E12627A-8FEC-4AB2-A188-04D34A82C921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E12627A-8FEC-4AB2-A188-04D34A82C921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E12627A-8FEC-4AB2-A188-04D34A82C921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
