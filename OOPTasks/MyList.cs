@@ -39,7 +39,7 @@
         {
             for (int i = 0; i < array.Length; i++)
             {
-                if ((int) (object) array[i] == (int) (object) item)
+                if ((object) array[i] == (object) item)
                 {
                     return true;
                 }
