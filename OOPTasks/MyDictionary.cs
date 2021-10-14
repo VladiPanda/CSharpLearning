@@ -23,6 +23,7 @@ namespace OOPTasks
             Key = new TKey[n];
             Value = new TValue[n];
             lenght = n;
+            
         }
 
         public string this[int index]

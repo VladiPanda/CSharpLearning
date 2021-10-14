@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace OOPTasks
 {
@@ -19,36 +20,36 @@ namespace OOPTasks
             
             // Generics # 2
 
-            Console.WriteLine("Enter the length of the array: ");
-            var str = Console.ReadLine();
-            int a = string.IsNullOrEmpty(str) ? 0 : Convert.ToInt32(str);
-            
-            var list = new MyList<int>();
-            
-            var b = new Random();
-            for (int x = 0; x < a; x++)
-            {
-                list.Add(b.Next(100));
-            }
-            
-            Console.WriteLine("Array elements: ");
-            for (int q = 0; q < list.Count; q++)
-            {
-                Console.Write(list[q] + " ");
-            }
-            
-            Console.WriteLine();
-            Console.WriteLine(new string('-', 30));
-            
-            Console.WriteLine("Type value for searching: ");
-            if (list.Contains(Convert.ToInt32(Console.ReadLine())))
-            {
-                Console.WriteLine("Zbs, ono est'");
-            }
-            else
-            {
-                Console.WriteLine("Ne zbz, ego net");
-            }
+            // Console.WriteLine("Enter the length of the array: ");
+            // var str = Console.ReadLine();
+            // int a = string.IsNullOrEmpty(str) ? 0 : Convert.ToInt32(str);
+            //
+            // var list = new MyList<int>();
+            //
+            // var b = new Random();
+            // for (int x = 0; x < a; x++)
+            // {
+            //     list.Add(b.Next(100));
+            // }
+            //
+            // Console.WriteLine("Array elements: ");
+            // for (int q = 0; q < list.Count; q++)
+            // {
+            //     Console.Write(list[q] + " ");
+            // }
+            //
+            // Console.WriteLine();
+            // Console.WriteLine(new string('-', 30));
+            //
+            // Console.WriteLine("Type value for searching: ");
+            // if (list.Contains(Convert.ToInt32(Console.ReadLine())))
+            // {
+            //     Console.WriteLine("Zbs, ono est'");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Ne zbz, ego net");
+            // }
             
             // Generics # 3
 
@@ -71,9 +72,18 @@ namespace OOPTasks
             //
             // Console.WriteLine(dictionary[0]);
             // Console.WriteLine(dictionary.Lenght);
+
+            var d = new Dictionary<string, int>();
+            d.Add("10", 100);
+            d["11"] = 200;
+            Console.WriteLine(d["10"]); // 100
+            Console.WriteLine(d["11"]); // 200
+            d["11"] = 201;
+            Console.WriteLine(d["11"]); // 201
+            d.Add("11", 100); // ошибка
             
             // Generics # 4
-            // Console.WriteLine("Type massive length: ");
+            // Console.WriteLine("Type array length: ");
             // int h = Convert.ToInt32(Console.ReadLine());
             //
             // var list2 = new MyList2<int>(h);
@@ -84,7 +94,7 @@ namespace OOPTasks
             //     list2.Add(e, y.Next(100));
             // }
             //
-            // Console.WriteLine("Massive");
+            // Console.WriteLine("array");
             // int[] f = list2.GetArray(); // расширяющий метод
             //
             // for (int j = 0; j < f.Length; j++)
@@ -93,7 +103,7 @@ namespace OOPTasks
             // }
             //
             // Console.WriteLine();
-            // Console.WriteLine("Massive Length: {0}", list2.Lenght);
+            // Console.WriteLine("array Length: {0}", list2.Lenght);
             
             
             // Generics # 5
