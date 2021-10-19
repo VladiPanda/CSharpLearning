@@ -21,7 +21,7 @@ namespace Threads_01
             ThreadStart writeSecond = new ThreadStart(WriteSecond);
             Thread thread = new Thread(writeSecond);
             thread.Start();
-
+            
             while (true)
             {
                 Console.WriteLine("Primary");

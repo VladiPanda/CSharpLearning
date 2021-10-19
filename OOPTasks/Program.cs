@@ -1,0 +1,152 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace OOPTasks
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Generics # 1
+            
+            // Создаем переменную типа i и присваиваем ей экземпляр который будет возвращать метод AddingMethod
+            // int i = MyClass<int>.AddingMethod();
+            // // Проверяем тип и имя
+            // Console.WriteLine(i.GetType().Name);
+            //
+            // Program p = MyClass<Program>.AddingMethod();
+            // Console.WriteLine(p.GetType().Name);
+            
+            // Generics # 2
+
+            // Console.WriteLine("Enter the length of the array: ");
+            // var str = Console.ReadLine();
+            // int a = string.IsNullOrEmpty(str) ? 0 : Convert.ToInt32(str);
+            //
+            // var list = new MyList<int>();
+            //
+            // var b = new Random();
+            // for (int x = 0; x < a; x++)
+            // {
+            //     list.Add(b.Next(100));
+            // }
+            //
+            // Console.WriteLine("Array elements: ");
+            // for (int q = 0; q < list.Count; q++)
+            // {
+            //     Console.Write(list[q] + " ");
+            // }
+            //
+            // Console.WriteLine();
+            // Console.WriteLine(new string('-', 30));
+            //
+            // Console.WriteLine("Type value for searching: ");
+            // if (list.Contains(Convert.ToInt32(Console.ReadLine())))
+            // {
+            //     Console.WriteLine("Zbs, ono est'");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Ne zbz, ego net");
+            // }
+            
+            // Generics # 3
+
+            // Console.WriteLine("Type dictionary length: ");
+            // int n = Convert.ToInt32(Console.ReadLine());
+            //
+            // var dictionary = new MyDictionary<string, string>(n);
+            //
+            // for (int v = 0; v < n; v++)
+            // {
+            //     dictionary.Add(v, "Денис", "Programmer, guru, good guy");
+            // }
+            //
+            // Console.WriteLine(new string('-', 30));
+            //
+            // for (int g = 0; g < n; g++)
+            // {
+            //     Console.WriteLine(dictionary[g]);
+            // }
+            //
+            // Console.WriteLine(dictionary[0]);
+            // Console.WriteLine(dictionary.Lenght);
+
+            var d = new Dictionary<string, int>();
+            d.Add("10", 100);
+            d["11"] = 200;
+            Console.WriteLine(d["10"]); // 100
+            Console.WriteLine(d["11"]); // 200
+            d["11"] = 201;
+            Console.WriteLine(d["11"]); // 201
+            d.Add("11", 100); // ошибка
+            
+            // Generics # 4
+            // Console.WriteLine("Type array length: ");
+            // int h = Convert.ToInt32(Console.ReadLine());
+            //
+            // var list2 = new MyList2<int>(h);
+            //
+            // var y = new Random();
+            // for (int e = 0; e < h; e++)
+            // {
+            //     list2.Add(e, y.Next(100));
+            // }
+            //
+            // Console.WriteLine("array");
+            // int[] f = list2.GetArray(); // расширяющий метод
+            //
+            // for (int j = 0; j < f.Length; j++)
+            // {
+            //     Console.Write("{0}" + " ", f[j]);
+            // }
+            //
+            // Console.WriteLine();
+            // Console.WriteLine("array Length: {0}", list2.Lenght);
+            
+            
+            // Generics # 5
+            // ArrayList arrayList = new ArrayList();
+            // arrayList.Add(0);
+            // arrayList.Add(0.67);
+            // arrayList.Add('a');
+            // arrayList.Add("Element");
+            // arrayList.Add(new MyClass2());
+            //
+            // for (int i = 0; i < arrayList.Count; i++)
+            // {
+            //     Console.WriteLine(arrayList[i]);
+            // }
+            
+            // Generics # 6
+            // Console.WriteLine("Cars park: ");
+            // var park = new CarCollection<string>();
+            //
+            // park.AddCar("Batmobile", new DateTime(1975, 12,5));
+            // park.AddCar("Danmobile", new DateTime(2021, 11,3));
+            // park.AddCar("Vovanmobile", new DateTime(1473,5,7));
+            // park.AddCar("Alexmobile", new DateTime(2045,10,3));
+            // park.AddCar("Cybermobile", new DateTime(2077,7,7));
+            //
+            // Console.WriteLine(park.ToString());
+            //
+            // Console.WriteLine("Right now in the park: {0} cars", park.Lenght);
+            //
+            // Console.WriteLine("Type the number of car you are searching: ");
+            // string text = Console.ReadLine();
+            //
+            // if (string.IsNullOrEmpty(text))
+            // {
+            //     Console.WriteLine("Nu taypni blin");
+            // }
+            // else
+            // {
+            //     int number = Convert.ToInt32(text);
+            //     Console.WriteLine(park[number - 1]);
+            // }
+
+
+        }
+    }
+}
