@@ -292,6 +292,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoloLearnDance", "SoloLearn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixThread", "MatrixThread\MatrixThread.csproj", "{750D62B1-6CE0-483A-B3EF-A4EED961E5A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamsCodeBlog", "StreamsCodeBlog\StreamsCodeBlog.csproj", "{C4E90856-69B3-4EC2-A65D-B81D800CEA45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -882,5 +884,9 @@ Global
 		{750D62B1-6CE0-483A-B3EF-A4EED961E5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{750D62B1-6CE0-483A-B3EF-A4EED961E5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{750D62B1-6CE0-483A-B3EF-A4EED961E5A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4E90856-69B3-4EC2-A65D-B81D800CEA45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E90856-69B3-4EC2-A65D-B81D800CEA45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E90856-69B3-4EC2-A65D-B81D800CEA45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E90856-69B3-4EC2-A65D-B81D800CEA45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
